@@ -1,0 +1,14 @@
+﻿<Window x:Class="Agenty.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Agenty"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="button" Content="Загрузить отчет-акт" HorizontalAlignment="Left" Height="32" Margin="105,96,0,0" VerticalAlignment="Top" Width="126" Click="button_Click"/>
+        <Button x:Name="button1" Content="Расчет" HorizontalAlignment="Left" Margin="105,167,0,0" VerticalAlignment="Top" Width="126" RenderTransformOrigin="-0.275,0.176" Height="30" Click="button1_Click"/>
+
+    </Grid>
+</Window>

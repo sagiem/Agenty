@@ -1,0 +1,15 @@
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\bin\Debug\Agenty.exe.config
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\bin\Debug\Agenty.exe
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\bin\Debug\Agenty.pdb
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\Agenty.csprojResolveAssemblyReference.cache
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\MainWindow.g.cs
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\App.g.cs
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\Agenty_MarkupCompile.cache
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\Agenty_MarkupCompile.lref
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\MainWindow.baml
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\Agenty.g.resources
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\Agenty.Properties.Resources.resources
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\Agenty.csproj.GenerateResource.Cache
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\Agenty.csproj.CoreCompileInputs.cache
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\Agenty.exe
+C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\obj\Debug\Agenty.pdb
