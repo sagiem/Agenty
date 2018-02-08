@@ -31,6 +31,10 @@ namespace Agenty
         private void button_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openfile = new OpenFileDialog();
+            openfile.Multiselect = false;
+            openfile.DefaultExt = "*.xls;*.xlsx";
+            openfile.Filter = "Microsoft Excel (*.xls*)|*.xls*";
+            openfile.Title = "Выберите документ Excel";
             openfile.ShowDialog();
             if(openfile.FileName != null)
             {
