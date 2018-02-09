@@ -8,11 +8,11 @@ namespace Agenty
 {
     class ExcelOpen
     {
-        int a;
-        int c;
-        int d;
+        public int a;
+        public string c;
+        public decimal d;
 
-        public ExcelOpen(int a, int c, int d)
+        public ExcelOpen(int a, string c, decimal d)
         {
             this.a = a;
             this.c = c;
