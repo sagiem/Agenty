@@ -59,7 +59,7 @@ namespace Agenty
             //Загружаем документ
             Microsoft.Office.Interop.Word.Document doc = null;
 
-            object fileName = @"C:\Новая папка\Desktop\прога\Agenty\files\akt.doc";
+            object fileName = @"C:\Новая папка\Desktop\прога\Agenty\files\akt.docx";
             object falseValue = false;
             object trueValue = true;
             object missing = Type.Missing;
