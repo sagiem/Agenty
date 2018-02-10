@@ -45,7 +45,7 @@ namespace Agenty
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Raschet raschet = new Raschet(file);
-            //raschet.Exelreader();
+            raschet.Exelreader();
             raschet.ExelAkt();
         }
     }

@@ -59,7 +59,7 @@ namespace Agenty
             //Загружаем документ
             Microsoft.Office.Interop.Word.Document doc = null;
 
-            object fileName = @"C:\Новая папка\Desktop\прога\Agenty\files\akt.docx";
+            object fileName = @"Z:\akt.docx";
             object falseValue = false;
             object trueValue = true;
             object missing = Type.Missing;
@@ -74,18 +74,48 @@ namespace Agenty
 
             //Заполняем в таблицу - 10 записей.
 
-            for (int i = 1; i < 11; i++)
+            for (int i = 1; i <= exp.Count(); i++)
             {
                 tbl.Rows.Add(ref missing);//Добавляем в таблицу строку.
                                           //Обычно саздаю только строку с заголовками и одну пустую для данных.
-                tbl.Rows[i + 1].Cells[1].Range.Text = "Запись №" + i.ToString();
-                tbl.Rows[i + 1].Cells[2].Range.Text = "Запись №" + i.ToString();
-                tbl.Rows[i + 1].Cells[3].Range.Text = "Запись №" + i.ToString();
+                tbl.Rows[i + 1].Cells[1].Range.Text = ((exp[i - 1]).a).ToString();
+                tbl.Rows[i + 1].Cells[2].Range.Text = ((exp[i - 1]).c).ToString();
+                tbl.Rows[i + 1].Cells[3].Range.Text = ((exp[i - 1]).d).ToString();
 
             }
 
+
+            //Очищаем параметры поиска
+            app.Selection.Find.ClearFormatting();
+            app.Selection.Find.Replacement.ClearFormatting();
+
+            //Задаём параметры замены и выполняем замену.
+            object findText = "p1";
+            object replaceWith = "Директор";
+            object replace = 2;
+
+
+
+
+            app.Selection.Find.Execute(ref findText, ref missing, ref missing, ref missing,
+            ref missing, ref missing, ref missing, ref missing, ref missing, ref replaceWith,
+            ref replace, ref missing, ref missing, ref missing, ref missing);
+
+            object findText1 = "p2";
+            object replaceWith1 = "Бухгалтер";
+            object replace1 = 2;
+
+
+            app.Selection.Find.Execute(ref findText1, ref missing, ref missing, ref missing,
+            ref missing, ref missing, ref missing, ref missing, ref missing, ref replaceWith1,
+            ref replace1, ref missing, ref missing, ref missing, ref missing);
+
+
+
             //Открываем документ для просмотра.
             app.Visible = true;
+            //app.Quit(); // выйти из word
+            GC.Collect(); // убрать за  собой
 
 
             //// Создаём экземпляр нашего приложения
