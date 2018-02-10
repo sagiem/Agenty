@@ -20,3 +20,23 @@ C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\bin\Debug\System.IO.FileSystem.Primit
 C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\bin\Debug\System.IO.Packaging.dll
 C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\bin\Debug\DocumentFormat.OpenXml.xml
 C:\Users\kashinmv\Desktop\c#\Agenty\Agenty\bin\Debug\ExcelNumberFormat.xml
+C:\Новая папка\Desktop\прога\Agenty\Agenty\bin\Debug\Agenty.exe.config
+C:\Новая папка\Desktop\прога\Agenty\Agenty\bin\Debug\Agenty.exe
+C:\Новая папка\Desktop\прога\Agenty\Agenty\bin\Debug\Agenty.pdb
+C:\Новая папка\Desktop\прога\Agenty\Agenty\bin\Debug\ExcelNumberFormat.dll
+C:\Новая папка\Desktop\прога\Agenty\Agenty\bin\Debug\FastMember.Signed.dll
+C:\Новая папка\Desktop\прога\Agenty\Agenty\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Новая папка\Desktop\прога\Agenty\Agenty\bin\Debug\System.IO.Packaging.dll
+C:\Новая папка\Desktop\прога\Agenty\Agenty\bin\Debug\ExcelNumberFormat.xml
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\Agenty.csprojResolveAssemblyReference.cache
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\MainWindow.g.cs
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\App.g.cs
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\Agenty_MarkupCompile.cache
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\Agenty_MarkupCompile.lref
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\MainWindow.baml
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\Agenty.g.resources
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\Agenty.Properties.Resources.resources
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\Agenty.csproj.GenerateResource.Cache
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\Agenty.csproj.CoreCompileInputs.cache
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\Agenty.exe
+C:\Новая папка\Desktop\прога\Agenty\Agenty\obj\Debug\Agenty.pdb
