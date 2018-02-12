@@ -13,6 +13,7 @@ namespace Agenty
         public string file;
         string b, c, e;
         decimal d;
+        decimal sum = 0;
         int z = 14;
         int t = 1;
 
@@ -40,6 +41,7 @@ namespace Agenty
                     ExcelOpen excelOpen = new ExcelOpen(t,e,d);
                     exp.Add(excelOpen);
                     t++;
+                    sum = sum + d;
                 }
                 z++;               
             }
@@ -59,7 +61,7 @@ namespace Agenty
             //Загружаем документ
             Microsoft.Office.Interop.Word.Document doc = null;
 
-            object fileName = @"Z:\akt.docx";
+            object fileName = @"D:\akt.docx";
             object falseValue = false;
             object trueValue = true;
             object missing = Type.Missing;
@@ -73,8 +75,8 @@ namespace Agenty
             Microsoft.Office.Interop.Word.Table tbl = app.ActiveDocument.Tables[1];
 
             //Заполняем в таблицу - 10 записей.
-
-            for (int i = 1; i <= exp.Count(); i++)
+            int i;
+            for ( i = 1; i <= exp.Count(); i++)
             {
                 tbl.Rows.Add(ref missing);//Добавляем в таблицу строку.
                                           //Обычно саздаю только строку с заголовками и одну пустую для данных.
@@ -84,13 +86,19 @@ namespace Agenty
 
             }
 
+            tbl.Rows.Add(ref missing);//Добавляем в таблицу строку.
+                                      //Обычно саздаю только строку с заголовками и одну пустую для данных.
+            tbl.Rows[i + 1].Cells[1].Range.Text = "Итого";
+            tbl.Rows[i + 1].Cells[2].Range.Text = (i-1).ToString();
+            tbl.Rows[i + 1].Cells[3].Range.Text = (sum).ToString();
+
 
             //Очищаем параметры поиска
             app.Selection.Find.ClearFormatting();
             app.Selection.Find.Replacement.ClearFormatting();
 
             //Задаём параметры замены и выполняем замену.
-            object findText = "p1";
+            object findText = "[data]";
             object replaceWith = "Директор";
             object replace = 2;
 

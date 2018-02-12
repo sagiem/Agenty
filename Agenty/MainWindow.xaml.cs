@@ -47,6 +47,8 @@ namespace Agenty
             Raschet raschet = new Raschet(file);
             raschet.Exelreader();
             raschet.ExelAkt();
+
+
         }
     }
 }
