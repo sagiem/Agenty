@@ -61,7 +61,7 @@ namespace Agenty
             //Загружаем документ
             Microsoft.Office.Interop.Word.Document doc = null;
 
-            object fileName = @"D:\akt.docx";
+            object fileName = @"C:\Users\kashinmv\Desktop\прога\Agenty\files\otchet.docx";
             object falseValue = false;
             object trueValue = true;
             object missing = Type.Missing;
@@ -98,6 +98,7 @@ namespace Agenty
             app.Selection.Find.Replacement.ClearFormatting();
 
             //Задаём параметры замены и выполняем замену.
+            
             object findText = "[data]";
             object replaceWith = "Директор";
             object replace = 2;

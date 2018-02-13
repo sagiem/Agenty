@@ -5,10 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Agenty"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Отчет-акт" Height="350" Width="525">
     <Grid>
-        <Button x:Name="button" Content="Загрузить отчет-акт" HorizontalAlignment="Left" Height="32" Margin="105,96,0,0" VerticalAlignment="Top" Width="126" Click="button_Click"/>
-        <Button x:Name="button1" Content="Расчет" HorizontalAlignment="Left" Margin="105,167,0,0" VerticalAlignment="Top" Width="126" RenderTransformOrigin="-0.275,0.176" Height="30" Click="button1_Click"/>
-
+        <TabControl x:Name="tabControl" HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="497">
+            <TabItem Header="Юридическое лицо">
+                <Grid Background="#FFE5E5E5">
+                    <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,14,0,0" TextWrapping="Wrap" Text="Агент" VerticalAlignment="Top" Width="37" Height="18" FontWeight="Bold" RenderTransformOrigin="0.568,0.792"/>
+                    <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="139,10,0,0" VerticalAlignment="Top" Width="233"/>
+                    <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,40,0,0" TextWrapping="Wrap" Text="Оплата по вводу (%)" VerticalAlignment="Top" FontWeight="Bold"/>
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="139,37,0,0" TextWrapping="Wrap" Text="9.5" VerticalAlignment="Top" Width="41"/>
+                    <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="10,65,0,0" TextWrapping="Wrap" Text="Акт об оказании услуг по вводу ОСАГО" VerticalAlignment="Top" IsEnabled="False" FontWeight="Bold"/>
+                    <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="10,86,0,0" TextWrapping="Wrap" Text="№" VerticalAlignment="Top" FontWeight="Bold"/>
+                    <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="107,86,0,0" TextWrapping="Wrap" Text="от" VerticalAlignment="Top" FontWeight="Bold"/>
+                    <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="29,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+                    <Button x:Name="button" Content="Загрузить файл" HorizontalAlignment="Left" Margin="27,127,0,0" VerticalAlignment="Top" Width="104" Click="button_Click_1"/>
+                    <Button x:Name="button1" Content="Отчет" HorizontalAlignment="Left" Margin="29,170,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click_1"/>
+                    <Button x:Name="button2" Content="Акт" HorizontalAlignment="Left" Margin="151,170,0,0" VerticalAlignment="Top" Width="75"/>
+                    <Button x:Name="button3" Content="Добавить" HorizontalAlignment="Left" Margin="402,11,0,0" VerticalAlignment="Top" Width="75"/>
+                    <DatePicker x:Name="datapic" HorizontalAlignment="Left" Margin="141,82,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Физическое лицо">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>
